@@ -1,0 +1,587 @@
+<?
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocodor 공식몰</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="shortcut icon" href="image/mainlogo/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/dbb7afa741.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery/js/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="jquery/js/modal.js"></script>
+    <script src="jquery/main.js"></script>
+  </head>
+  <body>
+    <div class="modal_back"></div>
+    `
+    <ul id="skip-menu">
+      <li><a href="#section">내용 바로가기</a></li>
+      <li><a href="#footer">하단 바로가기</a></li>
+    </ul>
+
+    <header id="header" class="cf">
+      <h1>
+        <a href="index.html">
+          <img src="image/mainlogo/logo.png" alt="logo"
+        /></a>
+      </h1>
+
+      <ul class="left">
+        <li>
+          <img
+            src="image/mainlogo/hamburger.png"
+            class="ham"
+            width="30px"
+            height="30px"
+            alt="메뉴버튼"
+          />
+        </li>
+        <li>
+          <img
+            src="image/mainlogo/search.png"
+            class="search"
+            alt="검색아이콘"
+          />
+        </li>
+      </ul>
+
+      <ul class="right">
+        <li>
+          <a href="javascript:void(0)">
+            <img
+              src="image/mainlogo/login.png"
+              class="login"
+              alt="로그인아이콘"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            ><img src="image/mainlogo/bag.png" class="bag" alt="장바구니아이콘"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- 검색 창  -->
+      <div class="big">
+        <form action="" method="">
+          <input
+            type="text"
+            id="search"
+            placeholder=" 검색어를 입력하세요"
+            autofocus
+          />
+          <!-- <img src="image/mainlogo/search.png" alt="돋보기아이콘"> -->
+        </form>
+        <ul>
+          <li class="ingi"><a href="javascript:void(0)">인기 검색어</a></li>
+          <li><a href="javascript:void(0)">디퓨저</a></li>
+          <li><a href="javascript:void(0)">캔들</a></li>
+          <li><a href="javascript:void(0)">우드볼</a></li>
+          <li><a href="javascript:void(0)">섬유스틱</a></li>
+          <li><a href="javascript:void(0)">블랙체리</a></li>
+        </ul>
+      </div>
+
+      <!-- 얇은 배너 -->
+      <div class="a1">
+        <a href="javascript:void(0)">신규가입 5,000원 쿠폰 지급</a>
+      </div>
+    </header>
+
+    <!-- 햄버거 메뉴 -->
+    <nav class="menu">
+      <div class="top">
+        <ul class="cf">
+          <li>
+            <a href="javascript:void(0)"><span>마이페이지</span></a>
+          </li>
+          <li><img src="image/menu/t_bar.png" alt="구분선" /></li>
+          <li>
+            <a href="javascript:void(0)"><span>회원가입</span></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="me1">
+        <li class="first">
+          <a class="title" href="javascript:void(0)"
+            >브랜드<img class="down" src="image/menu/down.png" alt="down"
+          /></a>
+          <ul class="sub">
+            <li><a href="javascript:void(0)">코코도르 소식</a></li>
+            <li><a href="javascript:void(0)">코코도르 기업홈페이지</a></li>
+            <li><a href="javascript:void(0)">사회공헌</a></li>
+          </ul>
+        </li>
+
+        <li class="first">
+          <a class="title" href="javascript:void(0)"
+            >제품<img class="down" src="image/menu/down.png" alt="down"
+          /></a>
+          <ul class="sub">
+            <li class="icon">
+              <a href="category.html"
+                >기획전<img class="sale" src="image/sale.png" alt="sale"
+              /></a>
+            </li>
+            <li><a href="category.html">디퓨저</a></li>
+            <li><a href="category.html">캔들</a></li>
+            <li><a href="category.html">플라워&Gift</a></li>
+            <li><a href="category.html">향기</a></li>
+            <li><a href="category.html">대량&답례품</a></li>
+            <li><a href="category.html">도매고객전용</a></li>
+          </ul>
+        </li>
+
+        <li class="first">
+          <a class="title" href="javascript:void(0)"
+            >이벤트<img class="down" src="image/menu/down.png" alt="down"
+          /></a>
+          <ul class="sub">
+            <li><a href="javascript:void(0)">이벤트 목록</a></li>
+          </ul>
+        </li>
+        <li class="first">
+          <a class="title" href="javascript:void(0)"
+            >고객지원<img class="down" src="image/menu/down.png" alt="down"
+          /></a>
+          <ul class="sub">
+            <li><a href="javascript:void(0)">자주묻는 질문</a></li>
+            <li><a href="javascript:void(0)">1:1문의</a></li>
+            <li><a href="javascript:void(0)">제휴문의</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <aside>
+      <div class="go-top"><span>TOP</span></div>
+    </aside>
+
+    <div id="slide">
+      <ul id="photo" class="cf">
+        <li>
+          <a href="category.html"
+            ><img
+              src="image/mainimage/main1.png"
+              alt="화이트라벨디퓨저+조화장식2개"
+          /></a>
+        </li>
+        <li>
+          <a href="category.html"
+            ><img src="image/mainimage/main4.png" alt="수국디퓨저"
+          /></a>
+        </li>
+        <li>
+          <a href="category.html"
+            ><img src="image/mainimage/main2.png" alt="플라워디퓨저"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text">
+      <p>향기, 그 이상의 가치</p>
+      <p>" 우리와 더 푸른 "</p>
+      <p>내일을 생각하는 브랜드</p>
+      <p class="logo">
+        <a href="javascript:void(0)"
+          ><img src="image/mainlogo/logo.png" alt="코코도르로고"
+        /></a>
+      </p>
+    </div>
+
+    <div class="bn1 cf">
+      <p>
+        <a href="javascript:void(0)"
+          ><img src="image/banner/ban01.png" alt="신규가입5,000원쿠폰지급배너"
+        /></a>
+      </p>
+    </div>
+
+    <section id="section" class="cf">
+      <!-- best 슬릭 필터 -->
+      <h2 id="fl">BEST</h2>
+      <span>
+        <ul class="small">
+          <li class="all on">*All</li>
+          <li class="dfs">디퓨저</li>
+          <li class="can">캔들</li>
+          <li class="gft">Gift</li>
+          <li class="flw">플라워&소품</li>
+        </ul></span
+      >
+
+      <!-- best 슬릭 -->
+      <div>
+        <ul id="best" class="filter cf">
+          <!-- 캔들 4개 시작 -->
+          <!-- <li class="bst can">
+      <a href="#"><img src="image/productcategory/candle/can1.png" alt="코코도르 허리케인 캔들 워머 + 라지자">
+      <span>코코도르 허리케인 캔들 워머 + 라지자</span>
+      <span>28,900원</span></a></li> -->
+
+          <li class="bst can">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/candle/can4.png"
+                alt="코코도르 프리즘 캔들 워머 + 프리미엄자"
+              />
+              <span>코코도르 프리즘 캔들 워머 + 프리미엄자</span>
+              <span>22,900원</span></a
+            >
+          </li>
+
+          <li class="bst can">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/candle/can5.png"
+                alt="코코도르 허리케인 캔들 워머 + 소이캔들"
+              />
+              <span>코코도르 허리케인 캔들 워머 + 소이캔들</span>
+              <span>28,900원</span></a
+            >
+          </li>
+
+          <li class="bst can">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/candle/can3.png"
+                alt="코코도르 라지자 X 2개"
+              />
+              <span>코코도르 라지자 X 2개</span><span>22,900원</span></a
+            >
+          </li>
+          <!-- 캔들 4개 끝 -->
+
+          <!-- 디퓨저 4개 시작 -->
+          <li class="bst dfs">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/signiture/signiture.png"
+                alt="코코도르 디퓨저 200ml X 리필액 200ml"
+              />
+              <span>코코도르 디퓨저 200ml X 리필액 200ml</span
+              ><span>11,900원</span></a
+            >
+          </li>
+
+          <li class="bst dfs">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/signiture/signiture1.png"
+                alt="코코도르 디퓨저 120ml (NEW fragrance)"
+              />
+              <span>코코도르 디퓨저 120ml<br />(NEW fragrance)</span
+              ><span>7,900원</span></a
+            >
+          </li>
+
+          <li class="bst dfs">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/whitelabel/white.png"
+                alt="코코도르 디퓨저 200ml 화이트라벨 X 2개"
+              />
+              <span>코코도르 디퓨저 200ml 화이트라벨 X 2</span
+              ><span>11,900원</span></a
+            >
+          </li>
+
+          <li class="bst dfs">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/blackedition/blackedition.png"
+                alt="코코도르 블랙골드에디션 디퓨저 200ml"
+              />
+              <span>코코도르 블랙골드에디션 디퓨저 200ml</span
+              ><span>10,900원</span></a
+            >
+          </li>
+          <!-- 디퓨저 4개 끝 -->
+
+          <!-- 기프트 4개 시작 -->
+          <li class="bst gft">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift1.png"
+                alt="코코도르 퍼퓸 디퓨저 캔들 3종 선물세트+ 2023 전통디퓨저 120ml+200ml+기프트백 증정"
+              />
+              <span
+                >코코도르 퍼퓸 디퓨저 캔들 3종 선물세트 + 2023 전통 디퓨저 120ml
+                + 200ml + 기프트 백 증정</span
+              >
+              <span>27,900원</span></a
+            >
+          </li>
+
+          <li class="bst gft">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift2.png"
+                alt="코코도르 퍼퓸 디퓨저 캔들 3종 선물세트"
+              />
+              <span>코코도르 퍼퓸 디퓨저 캔들 3종 선물세트</span>
+              <span>19,900원</span></a
+            >
+          </li>
+
+          <li class="bst gft">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift3.png"
+                alt="코코도르 디퓨저 200ml 2개입 선물세트/실속형"
+              />
+              <span>코코도르 디퓨저 200ml 2개입 선물세트/실속형</span>
+              <span>12,900원</span></a
+            >
+          </li>
+
+          <li class="bst gft">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift4.png"
+                alt="코코도르 차량용 디퓨저 50ml 2개입 선물세트"
+              />
+              <span>코코도르 차량용 디퓨저 50ml 2개입 선물세트</span>
+              <span>11,900원</span></a
+            >
+          </li>
+          <!-- 기프트 4개 끝 -->
+
+          <!-- 플라워 & 소품 4개 시작 -->
+          <li class="bst flw">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/flowerdiffuser/flower.png"
+                alt="코코도르 수국 디퓨저 100ml X 2개"
+              />
+              <span>코코도르 수국 디퓨저 100ml X 2개</span>
+              <span>12,900원</span></a
+            >
+          </li>
+
+          <li class="bst flw">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/whiteandflower/whiteandflower(2).png"
+                alt="코코도르 화이트라벨 디퓨저 200ml X 2개 + 조화스틱 2P"
+              />
+              <span>코코도르 화이트라벨 디퓨저 200ml X 2개 + 조화스틱 2P</span>
+              <span>9,900원</span></a
+            >
+          </li>
+
+          <li class="bst flw">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/whiteandflower/whiteandflower.png"
+                alt="코코도르 플라워 디퓨저 120ml X 2개"
+              />
+              <span>코코도르 플라워 디퓨저 120ml X 2개</span>
+              <span>15,900원</span></a
+            >
+          </li>
+
+          <li class="bst flw">
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/blackandflower/blackandflower.png"
+                alt="코코도르 블랙에디션 디퓨저 500ml X 2개"
+              />
+              <span>코코도르 블랙에디션 디퓨저 500ml X 2개</span>
+              <span>18,900원</span></a
+            >
+          </li>
+          <!-- 플라워 & 소품 4개 끝 -->
+        </ul>
+      </div>
+
+      <!-- new -->
+      <h2>NEW&nbsp;새로나온 상품</h2>
+      <div id="new" class="cf">
+        <ul class="bb cf">
+          <li>
+            <a href="category.html">
+              <img
+                src="image/productcategory/diffuser/neworetcdiffuser/stroketextplus/new.png"
+                alt="코코도르 우드 디퓨저 440ml"
+            /></a>
+          </li>
+          <!-- <li>
+        <a href="#">
+          <img src="image/productcategory/diffuser/neworetcdiffuser/stroketextplus/new9.png" alt="코코도르 카네이션 디퓨저 120ml + 쇼핑백 증정"></a></li> -->
+          <li>
+            <a href="category.html">
+              <img
+                src="image/productcategory/diffuser/neworetcdiffuser/stroketextplus/new8_1.png"
+                alt="코코도르 차량용 우드볼 디퓨저 50ml X 2개"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="square"><h2 class="pf">Fragrance</h2></div>
+
+      <div id="frag" class="cf">
+        <ul class="cc">
+          <li class="floral select">floral</li>
+          <li class="fruty">fruty</li>
+          <li class="cotton">cotton & musk</li>
+          <li class="herbal">herbal</li>
+          <li class="woody">woody</li>
+          <li class="fresh">fresh</li>
+        </ul>
+
+        <ul class="ract">
+          <li class="floral">
+            <a href="category.html"
+              ><img src="image/frag/frag1.png" alt="floral" />
+              <div class="button">floral</div></a
+            >
+          </li>
+          <li class="fruty">
+            <a href="category.html"
+              ><img src="image/frag/frag2-1.png" alt="fruty" />
+              <div class="button">fruty</div></a
+            >
+          </li>
+          <li class="cotton">
+            <a href="category.html"
+              ><img src="image/frag/frag3.png" alt="cotton" />
+              <div class="button">cotton</div></a
+            >
+          </li>
+          <li class="herbal">
+            <a href="category.html"
+              ><img src="image/frag/frag4.png" alt="herbal" />
+              <div class="button">herbal</div></a
+            >
+          </li>
+          <li class="woody">
+            <a href="category.html"
+              ><img src="image/frag/frag5.png" alt="woody" />
+              <div class="button">woody</div></a
+            >
+          </li>
+          <li class="fresh">
+            <a href="category.html"
+              ><img src="image/frag/frag6.png" alt="fresh" />
+              <div class="button">fresh</div></a
+            >
+          </li>
+        </ul>
+
+        <!-- <p class="a2"></p> -->
+      </div>
+
+      <h2 class="flo_sb">FLOWER DIFFUSER · GIFT</h2>
+      <div id="flower">
+        <ul class="cf">
+          <li>
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift5.png"
+                alt="2023 코코도르 카네이션 생화 꽃다발 + 디퓨저 120ml 선물세트"
+            /></a>
+          </li>
+          <li>
+            <a href="category.html"
+              ><img
+                src="image/productcategory/diffuser/giftdiffuser/gift6.png"
+                alt="코코도르 플라워 용돈 박스 + 쇼핑백 세트"
+            /></a>
+          </li>
+          <!-- <li><a href="#"><img src="img/main2.png" alt="플라워디퓨저"></a></li> -->
+        </ul>
+      </div>
+
+      <div class="bn2">
+        <p>
+          <a href="javascript:void(0)"
+            ><img
+              src="image/banner/ban_2.png"
+              alt="50개이상답례품&대량구매배너"
+          /></a>
+        </p>
+        <p>
+          <a href="javascript:void(0)"
+            ><img src="image/banner/ban3.png" alt="사업자회원특판문의배너"
+          /></a>
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h3>COMPANY INFO</h3>
+      <div class="cs">
+        <p>
+          교환 / 반품주소지 : 경기도 용인시 처인구 모현읍 왕담로 145-17
+          코코도르(주)
+        </p>
+        <p>CS CENTER : 02-3445-0101</p>
+        <p>운영시간 : 오전 9시 ~ 오후 5시 (주말, 공휴일 휴무)</p>
+        <p>점심시간 : 정오 12시 ~ 오후 1시</p>
+      </div>
+
+      <ul class="sns cf">
+        <li>
+          <a href="javascript:void(0)"
+            ><img src="image/in.png" alt="코코도르인스타그램"
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            ><img src="image/fb.png" alt="코코도르페이스북"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCW06WGMW5pivq9LgdrHGDGg"
+            target="_blank"
+            ><img src="image/yt.png" alt="코코도르유튜브"
+          /></a>
+        </li>
+      </ul>
+
+      <div class="int cf">
+        <ul>
+          <li><a href="javascript:void(0)">회사소개</a></li>
+          <li><a href="javascript:void(0)">이용악관</a></li>
+          <li>
+            <a href="javascript:void(0)" class="private">개인정보처리방침</a>
+          </li>
+          <li><a href="javascript:void(0)">이용안내</a></li>
+        </ul>
+      </div>
+
+      <div class="corp">
+        <p>코코도르(주) 대표이사 : 정연재</p>
+        <p>대표전화 : 02-3445-0101</p>
+        <p>통신판매업신고번호 : 2013-용인처인-0082</p>
+        <p>사업자등록번호 : 114-86-20008</p>
+        <p>이메일 : cocoadmin@cocodor.com</p>
+        <p>주소 : 경기도 용인시 처인구 모현읍 왕담로 145-17</p>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright&copy; by 코코도르(주). all rights reserved.</p>
+        <p>Hosting by makeshop. Design by morenvy.</p>
+      </div>
+    </footer>
+  </body>
+</html>
