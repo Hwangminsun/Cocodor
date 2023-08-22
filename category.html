@@ -6,85 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/category.css" />
-    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="shortcut icon" href="image/mainlogo/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/dbb7afa741.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="jquery/js/jquery-1.11.2.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="jquery/js/modal.js"></script>
-    <script src="jquery/main.js"></script>
-
+    <script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/category.js"></script>
     <title>Cocodor 공식몰</title>
   </head>
 
   <body>
+    <!-- modal -->
     <div class="modal_back"></div>
-    `
+  
+    <!-- skip-menu -->
     <ul id="skip-menu">
       <li><a href="#section">내용 바로가기</a></li>
       <li><a href="#footer">하단 바로가기</a></li>
     </ul>
 
+    <!-- 헤더 -->
     <header id="header" class="cf">
       <h1>
         <a href="index.html">
-          <img src="image/mainlogo/logo.png" alt="logo"
-        /></a>
+          <img src="image/mainlogo/logo.png" alt="logo">
+        </a>
       </h1>
 
       <ul class="left">
         <li>
-          <img
-            src="image/mainlogo/hamburger.png"
-            class="ham"
-            width="30px"
-            height="30px"
-            alt="메뉴버튼"
-          />
+          <img src="image/mainlogo/hamburger.png" class="ham" width="30px" height="30px" alt="메뉴버튼">
         </li>
         <li>
-          <img
-            src="image/mainlogo/search.png"
-            class="search"
-            alt="검색아이콘"
-          />
+          <img src="image/mainlogo/search.png" class="search" alt="검색 아이콘">
         </li>
       </ul>
 
       <ul class="right">
         <li>
           <a href="javascript:void(0)">
-            <img
-              src="image/mainlogo/login.png"
-              class="login"
-              alt="로그인아이콘"
-            />
+            <img src="image/mainlogo/login.png" class="login" alt="로그인 아이콘">
           </a>
         </li>
         <li>
-          <a href="javascript:void(0)"
-            ><img src="image/mainlogo/bag.png" class="bag" alt="장바구니아이콘"
-          /></a>
+          <a href="javascript:void(0)">
+            <img src="image/mainlogo/bag.png" class="bag" alt="장바구니 아이콘">
+          </a>
         </li>
       </ul>
 
       <!-- 검색 창  -->
-      <div class="big">
-        <form action="" method="">
-          <input
-            type="text"
-            id="search"
-            placeholder=" 검색어를 입력하세요"
-            autofocus
-          />
+      <div class="search_box">
+          <input type="text" id="search" placeholder=" 검색어를 입력하세요" autofocus>
           <!-- <img src="image/mainlogo/search.png" alt="돋보기아이콘"> -->
-        </form>
         <ul>
-          <li class="ingi"><a href="javascript:void(0)">인기 검색어</a></li>
+          <li class="popular">
+            <a href="javascript:void(0)">인기 검색어</a></li>
           <li><a href="javascript:void(0)">디퓨저</a></li>
           <li><a href="javascript:void(0)">캔들</a></li>
           <li><a href="javascript:void(0)">우드볼</a></li>
@@ -93,144 +70,99 @@
         </ul>
       </div>
 
-      <!-- 얇은 배너 -->
-      <div class="a1">
+      <!-- 헤더 아래 배너 -->
+      <div class="first_banner">
         <a href="javascript:void(0)">신규가입 5,000원 쿠폰 지급</a>
       </div>
+
     </header>
 
-    <!-- 햄버거 메뉴 -->
-    <nav class="menu">
-      <div class="top">
-        <ul class="cf">
-          <li>
-            <a href="javascript:void(0)"><span>마이페이지</span></a>
-          </li>
-          <li><img src="image/menu/t_bar.png" alt="구분선" /></li>
-          <li>
-            <a href="javascript:void(0)"><span>회원가입</span></a>
-          </li>
-        </ul>
-      </div>
-      <ul class="me1">
-        <li class="first">
-          <a class="title" href="javascript:void(0)"
-            >브랜드<img class="down" src="image/menu/down.png" alt="down"
-          /></a>
-          <ul class="sub">
-            <li><a href="javascript:void(0)">코코도르 소식</a></li>
-            <li><a href="javascript:void(0)">코코도르 기업홈페이지</a></li>
-            <li><a href="javascript:void(0)">사회공헌</a></li>
-          </ul>
+   <!-- 햄버거 메뉴 -->
+   <nav class="menu">
+    <div class="top_menu">
+      <ul class="cf">
+        <li>
+          <a href="javascript:void(0)"><span>마이페이지</span></a>
         </li>
-
-        <li class="first">
-          <a class="title" href="javascript:void(0)"
-            >제품<img class="down" src="image/menu/down.png" alt="down"
-          /></a>
-          <ul class="sub">
-            <li class="icon">
-              <a href="category.html"
-                >기획전<img class="sale" src="image/sale.png" alt="sale"
-              /></a>
-            </li>
-            <li><a href="category.html">디퓨저</a></li>
-            <li><a href="category.html">캔들</a></li>
-            <li><a href="category.html">플라워&Gift</a></li>
-            <li><a href="category.html">향기</a></li>
-            <li><a href="category.html">대량&답례품</a></li>
-            <li><a href="category.html">도매고객전용</a></li>
-          </ul>
-        </li>
-
-        <li class="first">
-          <a class="title" href="javascript:void(0)"
-            >이벤트<img class="down" src="image/menu/down.png" alt="down"
-          /></a>
-          <ul class="sub">
-            <li><a href="javascript:void(0)">이벤트 목록</a></li>
-          </ul>
-        </li>
-        <li class="first">
-          <a class="title" href="javascript:void(0)"
-            >고객지원<img class="down" src="image/menu/down.png" alt="down"
-          /></a>
-          <ul class="sub">
-            <li><a href="javascript:void(0)">자주묻는 질문</a></li>
-            <li><a href="javascript:void(0)">1:1문의</a></li>
-            <li><a href="javascript:void(0)">제휴문의</a></li>
-          </ul>
+        <li><img src="image/menu/t_bar.png" alt="구분선" /></li>
+        <li>
+          <a href="javascript:void(0)"><span>회원가입</span></a>
         </li>
       </ul>
-    </nav>
+    </div>
+    
+    <ul class="menu_list">
+      <li class="main_menu">
+        <a class="menu_title" href="javascript:void(0)">브랜드<img class="down" src="image/menu/down.png" alt="down"></a>
+        <ul class="sub">
+          <li><a href="javascript:void(0)">코코도르 소식</a></li>
+          <li><a href="javascript:void(0)">코코도르 기업홈페이지</a></li>
+          <li><a href="javascript:void(0)">사회공헌</a></li>
+        </ul>
+      </li>
 
+      <li class="main_menu">
+        <a class="menu_title" href="javascript:void(0)">제품<img class="down" src="image/menu/down.png" alt="down"></a>
+        <ul class="sub">
+          <li class="icon">
+            <a href="category.html">기획전<img class="sale" src="image/sale.png" alt="sale"></a>
+          </li>
+          <li><a href="category.html">디퓨저</a></li>
+          <li><a href="category.html">캔들</a></li>
+          <li><a href="category.html">플라워&Gift</a></li>
+          <li><a href="category.html">향기</a></li>
+          <li><a href="category.html">대량&답례품</a></li>
+          <li><a href="category.html">도매고객전용</a></li>
+        </ul>
+      </li>
+
+      <li class="main_menu">
+        <a class="menu_title" href="javascript:void(0)">이벤트<img class="down" src="image/menu/down.png" alt="down"></a>
+        <ul class="sub">
+          <li><a href="javascript:void(0)">이벤트 목록</a></li>
+        </ul>
+      </li>
+      <li class="main_menu">
+        <a class="menu_title" href="javascript:void(0)">고객지원<img class="down" src="image/menu/down.png" alt="down"></a>
+        <ul class="sub">
+          <li><a href="javascript:void(0)">자주묻는 질문</a></li>
+          <li><a href="javascript:void(0)">1:1문의</a></li>
+          <li><a href="javascript:void(0)">제휴문의</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- top 으로 이동 -->
     <div id="aside">
       <div class="go-top"><span>TOP</span></div>
     </div>
 
-    <script>
-      // Animate the scroll to top
-      $("#aside").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-      });
-
-      $("#aside").hide();
-
-      // ===== Scroll to Top visible ====
-      $(window).scroll(function () {
-        if ($(this).scrollTop() >= 1300) {
-          // If page is scrolled more than 50px
-          $("#aside").fadeIn(); // Fade in the arrow
-        } else {
-          $("#aside").fadeOut(); // Else fade out the arrow
-        }
-      });
-    </script>
-
-    <!-- 서브1 : 디퓨저 -->
+    <!-- 내용 시작 -->
     <section id="section">
-      <!-- 카테고리 목록 시작 -->
+
+      <!-- 카테고리 경로 -->
       <div id="category">
         <ul class="kind">
           <li><a href="index.html">홈&nbsp;</a></li>
           <li>
             &nbsp; <a href="javascript:void(0)" class="current">디퓨저</a>
           </li>
-          <li>
-            <a href="javascript:void(0)">시그니처</a>
-            <ul class="nn">
-              <li>기획전</li>
-              <li>BEST</li>
-              <li>디퓨저</li>
-              <li>캔들</li>
-              <li>향기별 제품</li>
-              <li>플라워 & 소품</li>
-              <li>대량 & 답례품</li>
-              <li>도매고객전용</li>
-            </ul>
-          </li>
         </ul>
       </div>
-      <!-- 카테고리 부분 끝 -->
 
-      <div id="pp">
-        <ul class="tt cf">
-          <li><img src="image/dfg0.png" alt="2023벚꽃에디션" /></li>
-          <li><img src="image/dfg2.png" alt="대용량디퓨저" /></li>
-          <li><img src="image/dfg3.png" alt="블랙에디션" /></li>
+      <!-- 슬라이드 배너 -->
+      <div id="top_banner">
+
+        <ul class="bn_slide cf">
+          <li><img src="image/dfg0.png" alt="2023 벚꽃 에디션" /></li>
+          <li><img src="image/dfg2.png" alt="대용량 디퓨저" /></li>
+          <li><img src="image/dfg3.png" alt="블랙 에디션" /></li>
         </ul>
 
-        <!-- 인디케이터 -->
-        <!-- <p>
-      <span class="on"></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p> -->
       </div>
-      <!-- #pp 끝 -->
 
+      <!-- 디퓨저 검색 필터 -->
       <div id="filter_wrap">
         <div id="filter_1">
           <p>
@@ -248,27 +180,21 @@
           </ul>
         </div>
       </div>
-      <!-- filter_wrap 끝 -->
 
-      <!-- 디퓨저 > 시그니처 시작 -->
-
-      <!-- * data-list
-
+<!-- 디퓨터 검색 필터 data-list
   aaa = signiture 
   bbb = white
   ccc = black
-  ddd = flower
- -->
+  ddd = flower -->
 
-      <div id="sg">
-        <ul class="ss cf">
+  <!-- 상품목록 시작 -->
+      <div id="dif_box">
+        <ul class="dif_list cf">
           <li data-list="시그니처 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/signiture/signiture.png"
-                alt="코코도르 디퓨저 200ml + 리필액 200ml"
-                data-list="시그니처 디퓨저"
-              />
+              <img src="image/productcategory/diffuser/signiture/signiture.png" 
+                alt="코코도르 디퓨저 200ml + 리필액 200ml" 
+                data-list="시그니처 디퓨저">
               <span class="filter"></span>
               <span>코코도르 디퓨저 200ml + 리필액 200ml</span>
               <span>11,900원</span>
@@ -281,11 +207,9 @@
 
           <li data-list="시그니처 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/signiture/signiture1.png"
-                alt="코코도르 디퓨저 120ml (NEW fragrance)"
-                data-list="시그니처 디퓨저"
-              />
+              <img src="image/productcategory/diffuser/signiture/signiture1.png" 
+                alt="코코도르 디퓨저 120ml (NEW fragrance)" 
+                data-list="시그니처 디퓨저">
               <span class="filter"></span>
               <span>코코도르 디퓨저 120ml </span>
               <span>(NEW fragrance)</span>
@@ -299,11 +223,9 @@
 
           <li data-list="화이트라벨 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/whitelabel/white.png"
-                alt="코코도르 디퓨저 200ml 화이트라벨 X 2"
-                data-list="화이트라벨 디퓨저"
-              />
+              <img src="image/productcategory/diffuser/whitelabel/white.png" 
+                alt="코코도르 디퓨저 200ml 화이트라벨 X 2" 
+                data-list="화이트라벨 디퓨저">
               <span class="filter"></span>
               <span>코코도르 디퓨저 200ml 화이트라벨 X 2개</span>
               <span>7,900원</span>
@@ -316,11 +238,9 @@
 
           <li data-list="블랙골드 에디션 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/blackedition/blackedition.png"
-                alt="코코도르 블랙골드에디션 디퓨저 200ml"
-                data-list="블랙골드 에디션 디퓨저"
-              />
+              <img src="image/productcategory/diffuser/blackedition/blackedition.png" 
+                alt="코코도르 블랙골드에디션 디퓨저 200ml" 
+                data-list="블랙골드 에디션 디퓨저">
               <span class="filter"></span>
               <span>코코도르 블랙골드에디션 디퓨저 200ml</span>
               <span>10,900원</span>
@@ -333,11 +253,9 @@
 
           <li data-list="플라워 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/flowerdiffuser/flower.png"
-                alt="코코도르 수국 디퓨저 100ml X 2개"
-                data-list="플라워 디퓨저"
-              />
+              <img src="image/productcategory/diffuser/flowerdiffuser/flower.png" 
+                alt="코코도르 수국 디퓨저 100ml X 2개" 
+                data-list="플라워 디퓨저">
               <span class="filter"></span>
               <span>코코도르 수국 디퓨저 100ml X 2개</span>
               <span>12,900원</span>
@@ -350,11 +268,9 @@
 
           <li data-list="화이트라벨 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/whiteandflower/whiteandflower(2).png"
+              <img src="image/productcategory/diffuser/whiteandflower/whiteandflower(2).png"
                 alt="코코도르 화이트라벨 디퓨저 200ml X 2개 + 조화스틱 2P"
-                data-list="화이트라벨 디퓨저"
-              />
+                data-list="화이트라벨 디퓨저">
               <span class="filter"></span>
               <span>코코도르 화이트라벨 디퓨저 200ml X 2개 (조화스틱 2P)</span>
               <span>9,900원</span>
@@ -369,8 +285,7 @@
               <img
                 src="image/productcategory/diffuser/whiteandflower/whiteandflower.png"
                 alt="코코도르 플라워 디퓨저 120ml X 2개"
-                data-list="플라워 디퓨저"
-              />
+                data-list="플라워 디퓨저">
               <span class="filter"></span>
               <span>코코도르 플라워 디퓨저 120ml X 2개</span>
               <span>15,900원</span>
@@ -383,11 +298,9 @@
 
           <li data-list="블랙골드 에디션 디퓨저">
             <a href="javascript:void(0)">
-              <img
-                src="image/productcategory/diffuser/blackandflower/blackandflower.png"
+              <img src="image/productcategory/diffuser/blackandflower/blackandflower.png"
                 alt="코코도르 블랙에디션 디퓨저 500ml X 2개"
-                data-list="블랙골드 에디션 디퓨저"
-              />
+                data-list="블랙골드 에디션 디퓨저">
               <span class="filter"></span>
               <span>코코도르 블랙에디션 플라워 디퓨저 500ml X 2개</span>
               <span>18,900원</span>
@@ -399,9 +312,11 @@
           </li>
         </ul>
       </div>
-      <!-- 홈 - 디퓨저 카테고리 끝-->
+      <!-- 상품목록 끝-->
     </section>
+    <!-- 내용 끝 -->
 
+    <!-- 푸터 -->
     <footer id="footer">
       <h3>COMPANY INFO</h3>
       <div class="cs">
