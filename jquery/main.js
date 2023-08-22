@@ -5,6 +5,7 @@ $(function () {
     modalOn();
   });
 
+  // 모달 부분 클릭 시 메뉴 닫히도록
   $(".modal_back").click(function () {
     $(".menu").animate({ marginLeft: "0%" }, 350);
     $(".sub").stop().slideUp(500);
@@ -29,7 +30,7 @@ $(function () {
     }
   });
 
-  // Animate the scroll to top
+  // scroll to top
   $("aside").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });
@@ -39,14 +40,13 @@ $(function () {
   // ===== Scroll to Top visible ====
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 2450) {
-      // If page is scrolled more than 50px
-      $("aside").fadeIn(); // Fade in the arrow
+      $("aside").fadeIn();
     } else {
-      $("aside").fadeOut(); // Else fade out the arrow
+      $("aside").fadeOut();
     }
   });
 
-  // 모달 함수 지정
+  // 모달 보일 때 스크롤 락 설정
   function modalOn() {
     $(".modal_back").addClass("back_on");
     $("body").addClass("body_lock");
@@ -135,9 +135,12 @@ $(function () {
   // 향기 슬릭 필터
   $(".cc li").on("click", function (e) {
     e.preventDefault();
+
     const num = $(this).index();
+
     $(".cc li").removeClass();
     $(this).addClass("select");
+
     if (num == 0) {
       $(".ract").slick("slickUnfilter");
     } else if (num == 1) {
@@ -158,13 +161,6 @@ $(function () {
     }
   });
 
-  //  $("ract li a").click(function(){
-
-  //   $(".ract button").css("display","block");
-  //   $(".ract button").show();
-
-  //  });
-
   //  flower, gift 슬릭 fade
   $("#flower ul").slick({
     autoplay: true,
@@ -177,13 +173,13 @@ $(function () {
 
   // categoty.html - 배너 슬라이드
 
-  //화면에서 배너 5장이 시간 간격을 두고 돌아가며 나오게 하는 것
+  //화면에서 배너 3장이 시간 간격을 두고 돌아가며 나오게 하는 것
 
   setInterval(function () {
     const left1 = $("#pp ul").css("left"); /* 0 */
 
     if (parseInt(left1) == -630) {
-      // 위치가 -700px 라면 (3번째 이미지에 위치해있으면)
+      // 위치가 -630px 라면 (3번째 이미지에 위치해있으면)
       $("#pp ul").animate(
         {
           left: 0, //ul의 왼쪽 위치를 0으로
@@ -193,7 +189,7 @@ $(function () {
     } else {
       $("#pp ul").animate(
         {
-          left: "-=315px", //ul의 왼쪽위치를 현재 위치에서 -700px
+          left: "-=315px", //ul의 왼쪽위치를 현재 위치에서
         },
         "slow"
       );
