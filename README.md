@@ -45,31 +45,31 @@
   >  - Slick slide, slick-dots / slick-arrow - css style 커스텀
   >  - Slick filter 적용   
 > ```
->  $(".cc li").on("click", function (e) {
+>  $(".frag_list li").on("click", function (e) {
 > 
 >    e.preventDefault();
 > 
 >    const num = $(this).index();
->    $(".cc li").removeClass();
+>    $(".frag_list li").removeClass();
 >    $(this).addClass("select");
 > 
 >    if (num == 0) {
->      $(".ract").slick("slickUnfilter");
+>      $(".frag_ract").slick("slickUnfilter");
 >    } else if (num == 1) {
->      $(".ract").slick("slickUnfilter");
->      $(".ract").slick("slickFilter", $(".ract li").filter(".fruty"));
+>      $(".frag_ract").slick("slickUnfilter");
+>      $(".frag_ract").slick("slickFilter", $(".frag_ract li").filter(".fruty"));
 >    } else if (num == 2) {
->      $(".ract").slick("slickUnfilter");
->      $(".ract").slick("slickFilter", $(".ract li").filter(".cotton"));
+>      $(".frag_ract").slick("slickUnfilter");
+>      $(".frag_ract").slick("slickFilter", $(".frag_ract li").filter(".cotton"));
 >    } else if (num == 3) {
->      $(".ract").slick("slickUnfilter");
->      $(".ract").slick("slickFilter", $(".ract li").filter(".herbal"));
+>      $(".frag_ract").slick("slickUnfilter");
+>      $(".frag_ract").slick("slickFilter", $(".frag_ract li").filter(".herbal"));
 >    } else if (num == 4) {
->      $(".ract").slick("slickUnfilter");
->     $(".ract").slick("slickFilter", $(".ract li").filter(".woody"));
+>      $(".frag_ract").slick("slickUnfilter");
+>     $(".frag_ract").slick("slickFilter", $(".frag_ract li").filter(".woody"));
 >    } else {
->      $(".ract").slick("slickUnfilter");
->      $(".ract").slick("slickFilter", $(".ract li").filter(".fresh"));
+>      $(".frag_ract").slick("slickUnfilter");
+>      $(".frag_ract").slick("slickFilter", $(".frag_ract li").filter(".fresh"));
 > 
 >    }
 >  });
@@ -81,12 +81,12 @@
 > ```
 >   setInterval(function() {
 > 
->     const left1 = $("#pp ul").css("left"); /* 0 */
+>     const left1 = $("#top_banner ul").css("left"); /* 0 */
 >
 >     if (parseInt(left1) == -630) {
->         $("#pp ul").animate({left: 0}, "slow"); //ul의 위치를 0으로
+>         $("#top_banner ul").animate({left: 0}, "slow"); //ul의 위치를 0으로
 >     } else {
->         $("#pp ul").animate({left: "-=315px"}, "slow");
+>         $("#top_banner ul").animate({left: "-=315px"}, "slow");
 >    }
 > 
 > }, 3000);
@@ -120,12 +120,12 @@
 >    const btnName = $(this).text();
 >    console.log(btnName);
 >
->    $("#sg ul.ss li").each(function () {
+>    $("#dif_box ul.dif_list li").each(function () {
 >      const imgAlt = $(this).find("img").attr("data-list");
 >      console.log(imgAlt);
 >
 >      if (btnName == "전체보기") {
->        $("#sg ul.ss li").fadeIn();
+>        $("#dif_box ul.dif_list li").fadeIn();
 >      } else if (imgAlt == btnName) {
 >        $(this).fadeIn();
 >      } else {
