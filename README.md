@@ -42,7 +42,7 @@
 > ```
   >  - 모달 창, 스크롤 lock 
   >  - 검색 아이콘 Toggle slide
-  >  - Slick slide, slick-dots / slick-arrow - css style 커스텀
+  >  - Slick slide 적용, slick-dots / slick-arrow - css style 커스텀
   >  - Slick filter 적용   
 > ```
 >  $(".frag_list li").on("click", function (e) {
