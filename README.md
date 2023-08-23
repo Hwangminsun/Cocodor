@@ -1,5 +1,5 @@
 ## 모바일 웹 - 코코도르 쇼핑몰 (Cocodor)
-### URL : http:/icelatte.dothome.co.kr
+### URL : https://hwangminsun.github.io/Cocodor
 ----------------------
 ### 기획 의도
 >   코코도르는 우리나라에서 가장 대중적인 디퓨저 브랜드입니다.  
